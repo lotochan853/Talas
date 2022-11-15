@@ -4,13 +4,13 @@ How to use？
 
 User can load their data of product from any data source and transform the data into the dict,eg:  
 
-'''
+'''  
 products_info = {"Product_1":{"Item price":xxx,"Shipped from":“xx”,"Weight":xx}...} # must be use the products_info  
 '''  
 
 User can load data of shipping from any data source and transform the data into the dict,eg:  
 
-'''
+'''  
 shipping_rates = {"Country":xxx,...} # must be use the shipping_rates  
 '''  
  
@@ -18,7 +18,7 @@ shipping_rates = {"Country":xxx,...} # must be use the shipping_rates
 
 User can custom the discount method,eg:  
 
-'''
+'''  
 def custom_method(products_purchase:[]):
     discount_detail...  
     if get the discount:  
@@ -28,6 +28,7 @@ def custom_method(products_purchase:[]):
 '''  
 
 Add the method to the function:main_calculate step 2:  
+'''  
 def main_calculate():  
     #setp 1:  
     ...  
@@ -35,6 +36,7 @@ def main_calculate():
     if custom_method(products_purchase):  
         discount_list.append(custom_method(products_purchase))  
     ...  
+'''
   
 3.Run the programmer  
 Use the terminal and input the command: python createCart.py --product "Shoes" --product "T-shirt" ...  
