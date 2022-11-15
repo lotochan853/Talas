@@ -12,6 +12,11 @@ User can load data of shipping from any data source and transform the data into 
 
 ```python  
 shipping_rates = {"Country":xxx,...} # must be use the shipping_rates  
+```  
+
+User can custom the VAT,eg
+```python
+vat_rate = 0.14
 ```
  
 ## 2.Custom the discount method  
